@@ -4,7 +4,12 @@
 
     $dbConnection = new DbHandler();
 
-    $catId = $_GET["id"];
+    $id = $_POST['fighter_id'];
+    $cat_name = $_POST['name'];
+    $cat_age = $_POST['age'];
+    $cat_info = $_POST['catInfo'];
+    $wins = $_POST['wins'];
+    $loss = $_POST['loss'];
 
-    $dbConnection->delete("DELETE FROM cats WHERE id = $catId");
+    $dbConnection->delete("DELETE FROM cats WHERE id = $id");
     

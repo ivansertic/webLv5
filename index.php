@@ -62,7 +62,7 @@
                             }'>
                                 <img src="<?=$row["image_path"]?>"  width="150" height="150">
                             </div>
-                            <button class="editButtons" onclick="location.href='update.php?id= <?=$row['id']?>'">Edit</button>
+                            <button class="editButtons" onclick="location.href='updateFighter.php?id= <?=$row['id']?>'">Edit</button>
                         </div>
                         <?php endwhile;
                         endif;?>
@@ -113,7 +113,7 @@
                             }'>
                                 <img src="<?=$row["image_path"]?>"  width="150" height="150">
                             </div>
-                            <button class="editButtons" onclick="location.href='update.php?id= <?=$row['id']?>'">Edit</button>
+                            <button class="editButtons" onclick="location.href='updateFighter.php?id= <?=$row['id']?>'">Edit</button>
                         </div>
                         <?php endwhile;
                         endif;?>
