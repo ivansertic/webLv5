@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container d-flex flex-column align-items-center col-5">
+        <h1>NEW FIGHTER JOINS THE FIGHT</h1>
+    </div>
+    <div class="container d-flex flex-column align-items-center col-5">
+        <form>
+            <div class = "row d-flex flex-column align-items-center side">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="row d-flex flex-column align-items-center side">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="row d-flex flex-column align-items-center side">
+                <label for="catInfo">Cat info</label>
+                <input type="text" id="catInfo" name="catInfo" required>
+            </div>
+            <div class="row d-flex flex-column align-items-center side">
+                <label for="wins">Wins</label>
+                <input type="number" id="wins" name="wins" required>
+            </div>
+            <div class="row d-flex flex-column align-items-center side">
+                <label for="loss">Loss</label>
+                <input type="number" id="loss" name="loss" required>
+            </div>
+            <div class="row d-flex flex-column align-items-center">
+                <label for="uploadFile">Cat Image</label>
+                <input name="uploadFile" type="file" required>
+            </div>
+            <br>
+            <div id= "buttons" class="container d-flex flex-column align-items-center side col-5">
+                <div class = "row d-flex flex-column align-items-center side">
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                    <input type="button" id="cancle" name="cancle" value="Cancle" onclick="location.href = 'index.php';">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./src/app_add.js"></script>
+</body>
+
+</html>
